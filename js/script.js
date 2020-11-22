@@ -5,8 +5,8 @@ $(document).ready(function(){
     arrows: false,
     dots: true,
     swipe: false,
-    // autoplay: true,
-    //  autoplaySpeed: 1000,
+    autoplay: true,
+     autoplaySpeed: 4000,
   });
   $('.header__link-drp').click(function(){
     $('.header__list-drop').toggleClass('drop-active');
