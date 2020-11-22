@@ -5,6 +5,8 @@ $(document).ready(function(){
     arrows: false,
     dots: true,
     swipe: false,
+    lazyLoad: 'progressive' ,
+    
     autoplay: true,
      autoplaySpeed: 4000,
   });
