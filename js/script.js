@@ -205,6 +205,45 @@ $(document).ready(function(){
         }
       ]      
     });
+    $('.help__wrapper').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: false,
+      swipe: false,
+      lazyLoad: 'progressive' ,
+      infinite: false,
+      responsive: [
+        {
+          breakpoint: 970,
+          settings: {
+            slidesToShow: 1.5,
+            slidesToScroll: 1.5,
+            swipe: true,
+            dots: true,
+          }
+        },
+        {
+          breakpoint: 720,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            swipe: true,
+            dots: true,
+          }
+        }
+        ,
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 0.5,
+            slidesToScroll: 0.5,
+            swipe: true,
+            dots: true,
+          }
+        }
+      ]      
+    });
     //------------------------ Слайдеры
   $('.header__link-drp').click(function(){
       $('.header__list-drop').toggleClass('drop-active');

@@ -751,6 +751,11 @@ body {
 .help {
   padding-top: 70px;
 }
+.help__box {
+  display: flex;
+  flex-direction: column;
+  margin: 0 17px;
+}
 .help__text {
   margin-top: 25px;
   font-weight: 300;
@@ -759,13 +764,46 @@ body {
   font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
 }
 .help__wrapper {
+  margin: 40px -17px 0;
+}
+.help__wrapper .slick-list {
+  outline: none;
+}
+.help__wrapper .slick-track {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 40px 0px 0;
+  outline: none;
+}
+.help__wrapper .slick-dots {
+  position: absolute;
+  display: flex;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0;
+  display: flex;
+  align-items: center;
+}
+.help__wrapper .slick-dots li {
+  width: 13px;
+  height: 13px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+  border-radius: 50%;
+  margin: 0 8px;
+  outline: none;
+}
+.help__wrapper .slick-dots li.slick-active {
+  border: 3px solid #77d444;
+  width: 16px;
+  height: 16px;
+}
+.help__wrapper .slick-dots li button {
+  background: none;
 }
 .help__inner {
-  width: 31.7%;
   min-height: 240px;
   position: relative;
   margin: 17px 0;
@@ -1453,6 +1491,11 @@ body {
   margin-top: 120px;
   padding-bottom: 100px;
 }
+.hits__link {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 .hits__title {
   position: relative;
   padding-bottom: 10px;
@@ -1576,6 +1619,9 @@ body {
   display: flex;
   background: rgba(43, 47, 64, 0.85);
   padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .hits__text {
   font-size: 21px;
@@ -1591,6 +1637,7 @@ body {
 }
 .hits__inner {
   display: flex;
+  align-items: center;
   flex-direction: column;
   flex-shrink: 0;
   margin: 0 5px;
@@ -1767,6 +1814,11 @@ body {
 .news {
   padding-bottom: 160px;
 }
+.news__link {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 .news__title {
   position: relative;
   padding-bottom: 10px;
@@ -1891,6 +1943,10 @@ body {
   background: rgba(43, 47, 64, 0.9);
   padding: 20px 15px;
   flex-direction: column;
+  pointer-events: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .news__text {
   font-size: 17px;
@@ -1906,6 +1962,7 @@ body {
 .news__mintitle {
   font-weight: 600;
   font-size: 22px;
+  color: #fff;
 }
 .news__inner {
   display: flex;
@@ -1973,20 +2030,41 @@ body {
   }
 
   .help__wrapper {
-    flex-wrap: initial;
-    overflow-x: auto;
-    padding-bottom: 12px;
+    margin: 40px -10px 0;
   }
 
   .help__inner {
-    box-shadow: none;
-    width: initial;
-    min-width: 32%;
-    margin: 0 20px 0 0;
+    margin: 10px 0;
+  }
+
+  .help__box {
+    margin: 0 10px;
   }
 
   .staps {
     padding-top: 90px;
+  }
+}
+@media (max-width: 970px) {
+  .help__box {
+    flex-direction: row;
+  }
+
+  .help__box {
+    margin: 0;
+  }
+
+  .help__wrapper {
+    margin: 40px -7px 0;
+  }
+
+  .help__inner {
+    width: 50%;
+    margin: 0 7px;
+  }
+
+  .help__wrapper {
+    position: relative;
   }
 }
 @media (max-width: 957px) {
@@ -2044,52 +2122,8 @@ body {
   }
 }
 @media (max-width: 900px) {
-  .help__wrapper {
-    position: relative;
-    outline: none;
-  }
   .help__inner {
-    position: relative;
-    outline: none;
     margin: 0 5px;
-  }
-  .help .slick-list {
-    overflow: hidden;
-    outline: none;
-  }
-  .help .slick-track {
-    display: flex;
-    outline: none;
-  }
-  .help .slick-dots {
-    position: absolute;
-    display: flex;
-    bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 0;
-    display: flex;
-    align-items: center;
-  }
-  .help .slick-dots li {
-    width: 13px;
-    height: 13px;
-    background: #fff;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    z-index: 3;
-    border-radius: 50%;
-    margin: 0 8px;
-    outline: none;
-  }
-  .help .slick-dots li.slick-active {
-    border: 3px solid #77d444;
-    width: 16px;
-    height: 16px;
-  }
-  .help .slick-dots li button {
-    background: none;
   }
 
   .stages__inner {
@@ -2130,11 +2164,6 @@ body {
   .hits__list .slick-arrow.slick-prev {
     margin-left: -115px;
     bottom: -51px;
-  }
-
-  .help__inner {
-    min-width: 49%;
-    margin: 0 11px 0 0;
   }
 }
 @media (max-width: 767px) {
@@ -2326,10 +2355,6 @@ body {
     margin-top: 30px;
   }
 
-  .help__inner {
-    margin: 0 9px 0 0;
-  }
-
   .partners__inner {
     width: 100%;
     margin: 15px 0;
@@ -2424,10 +2449,6 @@ body {
 
   .taobao__inner {
     padding: 0 20px;
-  }
-
-  .help__inner {
-    min-width: 100%;
   }
 }
 @media (max-width: 450px) {
