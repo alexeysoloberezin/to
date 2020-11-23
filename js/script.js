@@ -117,33 +117,33 @@ $(document).ready(function(){
         // request itemValue
       });
   });
-  if(matchMedia){
-    var screen = window.matchMedia("(max-width:900px)");
-    screen.addListener(changes);
-    changes(screen);
-  }
-  function changes(screen){
-    if (screen.matches){
-      $('.help__wrapper').slick({
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        arrows: false,
-        dots: true,    
-        infinite: false, 
-        // autoplay: true,
-        //  autoplaySpeed: 1000,
-        responsive: [
-          {
-            breakpoint: 540,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
+  // if(matchMedia){
+  //   var screen = window.matchMedia("(max-width:900px)");
+  //   screen.addListener(changes);
+  //   changes(screen);
+  // }
+
+  //   if (screen.matches){
+  //     $('.help__wrapper').slick({
+  //       slidesToShow: 2,
+  //       slidesToScroll: 2,
+  //       arrows: false,
+  //       dots: true,    
+  //       infinite: false, 
+  //       // autoplay: true,
+  //       //  autoplaySpeed: 1000,
+  //       responsive: [
+  //         {
+  //           breakpoint: 540,
+  //           settings: {
+  //             slidesToShow: 1,
+  //             slidesToScroll: 1,
              
-            }
-          }
-        ]
-      });
-    }
+  //           }
+  //         }
+  //       ]
+  //     });
+  //   }
   
   
     
@@ -220,9 +220,7 @@ $(document).ready(function(){
       $('.header__nav').removeClass('header__nav-active');
       $('.body__window').removeClass('body__window-active');
   
-    });
-  }
-  
+    });  
   
   $('.bell__btn').click(function(){
     $('.popup').addClass('popup-active');  

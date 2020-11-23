@@ -319,11 +319,8 @@ body {
     margin: 4px 0;
   }
 
-  &__itemone {
-    margin-right: 25px;
-  }
+  
 
-  &__linkone {}
 
   &__navtwo {}
 
@@ -347,11 +344,16 @@ body {
     transition: .25s;
     display: inline-block;
     &:hover{
-      color: $orange;
+      color: $green7;
     }
 
   }
-
+  &__itemone {
+    margin-right: 25px;
+    transition: .25s;
+    
+    
+  }
   &__navthree {}
 
   &__listthree {
@@ -368,6 +370,12 @@ body {
     margin: 15px auto 0;
     display: flex;
     justify-content: center;
+  }
+  
+  &__linkone {
+    &:hover{
+      color: $orange;
+    }
   }
 
   &__inner-info {
