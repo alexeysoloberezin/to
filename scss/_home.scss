@@ -1006,8 +1006,11 @@
   align-items: center;
   text-transform: uppercase;
   padding-right: 25px;
+  transition: .25s;
   position: relative;
-
+  &:hover{
+    color: $green;
+  }
   &:before {
     position: absolute;
     content: '';

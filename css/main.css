@@ -1414,7 +1414,11 @@ body {
   align-items: center;
   text-transform: uppercase;
   padding-right: 25px;
+  transition: 0.25s;
   position: relative;
+}
+.main__viewall:hover {
+  color: #8acd52;
 }
 .main__viewall:before {
   position: absolute;
