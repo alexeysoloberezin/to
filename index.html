@@ -9,8 +9,9 @@
 </head>
 <body>
   
-  <div class="wrapper">
-    <header class="header">     
+  <div class="wrapper" id="wrapper">
+    <header class="header">         
+      <div class="body__window"></div>  
       <div class="header__row">
         <div class="container">
           <div class="header__inline">
@@ -404,10 +405,463 @@
           </div>
         </div>
       </section>
-    </main>
-    
-    
-    <footer class="footer"></footer>
+      <section class="taobao">
+        <div class="container">
+          <div class="taobao__wrapper">
+            <div class="taobao__inner">
+              <div class="taobao__logo">
+                <img src="image/partners/taobao.png" alt="">
+              </div>
+              <p class="taobao__text">Taobao.com это крупнейшая в Азии торговая интернет-площадка, ассортимент 
+                которой более миллиарда товаров , от шариковой ручки до новеньких авто! Нет смысла искать другие интернет-магазины, ведь мы можем предложить Вам то, что не могут другие, а именно:
+              </p>              
+            </div>
+            <div class="taobao__partners">
+              <a class="taobao__partner" href="#">www.taobao.com</a>
+              <a class="taobao__partner" href="#">www.tmall.com</a>
+              <a class="taobao__partner" href="#">www.1688.com</a>
+            </div>
+          </div>
+          <div class="taobao__trigers">
+            <div class="taobao__triger">
+              <div class="taobao__block">
+                <img src="image/icons/arr.png" alt="">
+                <h3 class="taobao__title">Самая низкая цена</h3>
+              </div>
+              <p class="taobao__info">Мы не перепродаем товары из Китая 
+                с собственной наценкой. Мы работаем 
+                с интернет-магазином Taobao.com 
+                напрямую, поэтому Вы нисколько 
+                не переплачиваете.
+              </p>
+            </div>
+            <div class="taobao__triger">
+              <div class="taobao__block">
+                <img src="image/icons/best.png" alt="">
+                <h3 class="taobao__title">Лучшее качество</h3>
+              </div>
+              <p class="taobao__info">Все, что Вы заказываете, проходит осмотр на выявление явного брака. 
+                Заказывая красный зонт, Вы получите красный зонт, а не зеленое кашпо.
+              </p>
+            </div>
+            <div class="taobao__triger">
+              <div class="taobao__block">
+                <img src="image/icons/garant.png" alt="">
+                <h3 class="taobao__title">Гарантия доставки</h3>
+              </div>
+              <p class="taobao__info">Риск не получить посылку или получить её, но обнаружить отсутствие
+                нескольких позиций исключен. 
+                Мы лично забираем все посылки 
+                и бережно доставляем в Россию. 
+                К тому же это значительно сокращает время Вашего ожидания.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <div class="main__flex">
+            <h2 class="global__title">Отзывы о нашей работе</h2>
+            <a class="main__viewall" href="#">Смотреть все</a>
+          </div>
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <div class="reviews__wrapper">
+                <p class="reviews__name">Артём, Москва</p>
+                <p class="reviews__date">17.03.2019</p>
+              </div>
+              <!-- Количество звёзд в data-total-value -->
+              <ul class="reviews__inner" data-total-value="5">
+                <li class="reviews__star-rev" data-item-value="5">
+                  <svg class="reviews__star-revsvg"  viewBox="0 -10 511.98685 511" xmlns="http://www.w3.org/2000/svg"><path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" fill="#525c75"/></svg>
+                </li>
+                <li class="reviews__star-rev" data-item-value="4">
+                  <svg class="reviews__star-revsvg"  viewBox="0 -10 511.98685 511" xmlns="http://www.w3.org/2000/svg"><path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" fill="#525c75"/></svg>
+                </li>
+                <li class="reviews__star-rev" data-item-value="3">
+                  <svg class="reviews__star-revsvg"  viewBox="0 -10 511.98685 511" xmlns="http://www.w3.org/2000/svg"><path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" fill="#525c75"/></svg>
+                </li>
+                <li class="reviews__star-rev" data-item-value="2">
+                  <svg class="reviews__star-revsvg"  viewBox="0 -10 511.98685 511" xmlns="http://www.w3.org/2000/svg"><path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" fill="#525c75"/></svg>
+                </li>
+                <li class="reviews__star-rev" data-item-value="1">
+                  <svg class="reviews__star-revsvg"  viewBox="0 -10 511.98685 511" xmlns="http://www.w3.org/2000/svg"><path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" fill="#525c75"/></svg>
+                </li>
+               </ul>
+              <p class="reviews__text">
+                Полный успех. Огромное спасибо за профессиональную упаковку! Лучшая компания по доставке из Китая с которой я сотрудничал за все 10 лет опыта заказов из этой великой страны! Уровень сервиса выше всяких похвал!
+              </p>
+            </li>       
+            
+            <li class="reviews__item reviews__box">
+              <h3 class="reviews__subtitle">Оцените нашу компанию</h3>
+              <ul class="reviews__stars" data-total-value="0">
+                <li class="reviews__star" data-item-value="5">
+                  <svg class="reviews__star-svg"  viewBox="0 -10 511.98685 511" xmlns="http://www.w3.org/2000/svg"><path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" fill="#ffc107"/></svg>
+                </li>
+                <li class="reviews__star" data-item-value="4">
+                  <svg class="reviews__star-svg"  viewBox="0 -10 511.98685 511" xmlns="http://www.w3.org/2000/svg"><path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" fill="#ffc107"/></svg>
+                </li>
+                <li class="reviews__star" data-item-value="3">
+                  <svg class="reviews__star-svg"  viewBox="0 -10 511.98685 511"  xmlns="http://www.w3.org/2000/svg"><path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" fill="#ffc107"/></svg>
+                </li>
+                <li class="reviews__star" data-item-value="2">
+                  <svg class="reviews__star-svg"  viewBox="0 -10 511.98685 511"  xmlns="http://www.w3.org/2000/svg"><path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" fill="#ffc107"/></svg>
+                </li>
+                <li class="reviews__star" data-item-value="1">
+                  <svg class="reviews__star-svg"  viewBox="0 -10 511.98685 511"  xmlns="http://www.w3.org/2000/svg"><path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" fill="#ffc107"/></svg>
+                </li>
+              </ul>
+              <button class="reviews__btn">Оставить отзыв</button>
+            </li>
+
+            <li class="reviews__item">
+              <div class="reviews__wrapper">
+                <p class="reviews__name">Артём, Москва</p>
+                <p class="reviews__date">17.03.2019</p>
+              </div>
+              <!-- Количество звёзд в data-total-value -->
+              <ul class="reviews__inner" data-total-value="5">
+                <li class="reviews__star-rev" data-item-value="5">
+                  <svg class="reviews__star-revsvg"  viewBox="0 -10 511.98685 511" xmlns="http://www.w3.org/2000/svg"><path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" fill="#525c75"/></svg>
+                </li>
+                <li class="reviews__star-rev" data-item-value="4">
+                  <svg class="reviews__star-revsvg"  viewBox="0 -10 511.98685 511" xmlns="http://www.w3.org/2000/svg"><path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" fill="#525c75"/></svg>
+                </li>
+                <li class="reviews__star-rev" data-item-value="3">
+                  <svg class="reviews__star-revsvg"  viewBox="0 -10 511.98685 511" xmlns="http://www.w3.org/2000/svg"><path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" fill="#525c75"/></svg>
+                </li>
+                <li class="reviews__star-rev" data-item-value="2">
+                  <svg class="reviews__star-revsvg"  viewBox="0 -10 511.98685 511" xmlns="http://www.w3.org/2000/svg"><path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" fill="#525c75"/></svg>
+                </li>
+                <li class="reviews__star-rev" data-item-value="1">
+                  <svg class="reviews__star-revsvg"  viewBox="0 -10 511.98685 511" xmlns="http://www.w3.org/2000/svg"><path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" fill="#525c75"/></svg>
+                </li>
+               </ul>
+              <p class="reviews__text">
+                Здравствуйте! сегодня получили наш заказ. Доставили быстрее чем планировали, всего за 3 недели. Товар полностью в отличном состоянии (новый) упакован очень хорошо!
+                Заказали дополнительно обрешетоку на коробку, можно было и без неё...
+              </p>
+            </li>
+          </ul>
+   
+        </div>
+      </section>
+      <section class="hits">
+        <div class="container">
+          <div class="main__flex">
+            <h2 class="global__title hits__title">Хиты продаж</h2>
+            <a class="main__viewall" href="#">Смотреть все</a>
+          </div>
+          <ul class="hits__list">
+            <li class="hits__item">
+              <img class="hits__img-bg" src="image/hits/1.jpg" alt="">
+              <div class="hits__wrapper">
+                <a href="#" class="hits__text">Рубашка мужская цвет модный лето ткань распродажа распродажа</a>
+                <div class="hits__inner">
+                  <img src="image/icons/cart.png" alt="">
+                  <img src="image/icons/like.png" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="hits__item">
+              <img class="hits__img-bg" src="image/hits/2.jpg" alt="">
+              <div class="hits__wrapper">
+                <a href="#" class="hits__text">Рубашка мужская цвет модный лето ткань распродажа распродажа</a>
+                <div class="hits__inner">
+                  <img src="image/icons/cart.png" alt="">
+                  <img src="image/icons/like.png" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="hits__item">
+              <img class="hits__img-bg" src="image/hits/3.jpg" alt="">
+              <div class="hits__wrapper">
+                <a href="#" class="hits__text">Рубашка мужская цвет модный лето ткань распродажа распродажа</a>
+                <div class="hits__inner">
+                  <img src="image/icons/cart.png" alt="">
+                  <img src="image/icons/like.png" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="hits__item">
+              <img class="hits__img-bg" src="image/hits/4.jpg" alt="">
+              <div class="hits__wrapper">
+                <a href="#" class="hits__text">Рубашка мужская цвет модный лето ткань распродажа распродажа</a>
+                <div class="hits__inner">
+                  <img src="image/icons/cart.png" alt="">
+                  <img src="image/icons/like.png" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="hits__item">
+              <img class="hits__img-bg" src="image/hits/2.jpg" alt="">
+              <div class="hits__wrapper">
+                <a href="#" class="hits__text">Рубашка мужская цвет модный лето ткань распродажа распродажа</a>
+                <div class="hits__inner">
+                  <img src="image/icons/cart.png" alt="">
+                  <img src="image/icons/like.png" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="hits__item">
+              <img class="hits__img-bg" src="image/hits/4.jpg" alt="">
+              <div class="hits__wrapper">
+                <a href="#" class="hits__text">Рубашка мужская цвет модный лето ткань распродажа распродажа</a>
+                <div class="hits__inner">
+                  <img src="image/icons/cart.png" alt="">
+                  <img src="image/icons/like.png" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="hits__item">
+              <img class="hits__img-bg" src="image/hits/3.jpg" alt="">
+              <div class="hits__wrapper">
+                <a href="#" class="hits__text">Рубашка мужская цвет модный лето ткань распродажа распродажа</a>
+                <div class="hits__inner">
+                  <img src="image/icons/cart.png" alt="">
+                  <img src="image/icons/like.png" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="hits__item">
+              <img class="hits__img-bg" src="image/hits/3.jpg" alt="">
+              <div class="hits__wrapper">
+                <a href="#" class="hits__text">Рубашка мужская цвет модный лето ткань распродажа распродажа</a>
+                <div class="hits__inner">
+                  <img src="image/icons/cart.png" alt="">
+                  <img src="image/icons/like.png" alt="">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="bell">
+        <div class="container">
+          <h2 class="bell__title">Закажите звонок</h2>
+          <p class="bell__text">Наш оператор перезвонит вам в течении 15 минут</p>
+          <div class="bell__btn">Заказать звонок</div>
+        </div>
+        <div class="popup">
+          <div class="popup__form">
+            <p class="popup__title">Оставьте ваш номер</p>
+            <p class="popup__subtitle">И наш оператор перезвонит через 15 минут</p>
+            <div class="popup__wrapper">
+              <input type="text" class="popup__phone" placeholder="Введите ваш номер телефона">
+              <button class="popup__btn">Заказать звонок</button>
+            </div>
+            <div class="popup__close"></div>
+          </div>          
+        </div>
+      </section>
+      <section class="news">
+        <div class="container">
+          <div class="main__flex">
+            <h2 class="global__title news__title">Новости</h2>
+            <a class="main__viewall" href="#">Смотреть все</a>
+          </div>
+          <ul class="news__list">
+            <li class="news__item">
+              <img class="news__img-bg" src="image/news/1.jpg" alt="">
+              <div class="news__wrapper">
+                <h3 class="news__mintitle">Важная информация!</h3>
+                <a href="#" class="news__text">Идейные соображения высшего порядка, а также консультация с широким активом играет важную роль в...</a>
+                <div class="news__inner">
+                  <p class="news__date">08.06.2016</p>
+                  <a href="#"  class="news__next">подробнее</a>
+                </div>
+              </div>
+            </li>
+            <li class="news__item">
+              <img class="news__img-bg" src="image/news/2.jpg" alt="">
+              <div class="news__wrapper">
+                <h3 class="news__mintitle">Важная информация!</h3>
+                <a href="#" class="news__text">Идейные соображения высшего порядка, а также консультация с широким активом играет важную роль в...</a>
+                <div class="news__inner">
+                  <p class="news__date">08.06.2016</p>
+                  <a href="#"  class="news__next">подробнее</a>
+                </div>
+              </div>
+            </li>
+            <li class="news__item">
+              <img class="news__img-bg" src="image/news/3.jpg" alt="">
+              <div class="news__wrapper">
+                <h3 class="news__mintitle">Важная информация!</h3>
+                <a href="#" class="news__text">Идейные соображения высшего порядка, а также консультация с широким активом играет важную роль в...</a>
+                <div class="news__inner">
+                  <p class="news__date">08.06.2016</p>
+                  <a href="#"  class="news__next">подробнее</a>
+                </div>
+              </div>
+            </li>
+            <li class="news__item">
+              <img class="news__img-bg" src="image/news/4.jpg" alt="">
+              <div class="news__wrapper">
+                <h3 class="news__mintitle">Важная информация!</h3>
+                <a href="#" class="news__text">Идейные соображения высшего порядка, а также консультация с широким активом играет важную роль в...</a>
+                <div class="news__inner">
+                  <p class="news__date">08.06.2016</p>
+                  <a href="#"  class="news__next">подробнее</a>
+                </div>
+              </div>
+            </li>
+            <li class="news__item">
+              <img class="news__img-bg" src="image/news/1.jpg" alt="">
+              <div class="news__wrapper">
+                <h3 class="news__mintitle">Важная информация!</h3>
+                <a href="#" class="news__text">Идейные соображения высшего порядка, а также консультация с широким активом играет важную роль в...</a>
+                <div class="news__inner">
+                  <p class="news__date">08.06.2016</p>
+                  <a href="#" p class="news__next">подробнее</a>
+                </div>
+              </div>
+            </li>
+            <li class="news__item">
+              <img class="news__img-bg" src="image/news/4.jpg" alt="">
+              <div class="news__wrapper">
+                <h3 class="news__mintitle">Важная информация!</h3>
+                <a href="#" class="news__text">Идейные соображения высшего порядка, а также консультация с широким активом играет важную роль в...</a>
+                <div class="news__inner">
+                  <p class="news__date">08.06.2016</p>
+                  <a href="#"  class="news__next">подробнее</a>
+                </div>
+              </div>
+            </li>
+            <li class="news__item">
+              <img class="news__img-bg" src="image/news/3.jpg" alt="">
+              <div class="news__wrapper">
+                <h3 class="news__mintitle">Важная информация!</h3>
+                <a href="#" class="news__text">Идейные соображения высшего порядка, а также консультация с широким активом играет важную роль в...</a>
+                <div class="news__inner">
+                  <p class="news__date">08.06.2016</p>
+                  <a href="#" class="news__next">подробнее</a>
+                </div>
+              </div>
+            </li>
+           
+          </ul>
+        </div>
+      </section>
+    </main>     
+   
+    <footer class="footer">
+      <div class="container"> 
+        <div class="footer__block">
+          <div class="burger footer__burger">
+            <span class="burger-line__top"></span>
+            <span class="burger-line__center"></span>
+            <span class="burger-line__bottom"></span>
+          </div>
+          <div class="footer__inner">
+            <nav class="footer__navone footer__nav">
+              <ul class="footer__listone footer__list">
+                <li class="footer__itemone footer__item">                              
+                  <a class="footer__linkone footer__link" href="#">Товары</a>
+                </li>
+                <li class="footer__itemone footer__item">
+                  <a class="footer__linkone footer__link" href="#">О нас</a>
+                </li>
+                <li class="footer__itemone footer__item">
+                  <a class="footer__linkone footer__link" href="#">Чат</a>
+                </li>
+                <li class="footer__itemone footer__item">
+                  <a class="footer__linkone footer__link" href="#">Форум</a>
+                </li>
+                <li class="footer__itemone footer__item">
+                  <a class="footer__linkone footer__link" href="#">Условия</a>
+                </li>
+                <li class="footer__itemone footer__item">
+                  <a class="footer__linkone footer__link" href="#">Отзывы</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="footer__navtwo footer__nav">
+              <ul class="footer__listtwo footer__list">
+                <li class="footer__itemtwo footer__item">                              
+                  <a class="footer__linktwo footer__link" href="#">Купальники</a>
+                </li>     
+                <li class="footer__itemtwo footer__item">                              
+                  <a class="footer__linktwo footer__link" href="#">Паяльники</a>
+                </li>    
+                <li class="footer__itemtwo footer__item">                              
+                  <a class="footer__linktwo footer__link" href="#">украшения на шею</a>
+                </li>             
+              </ul>
+  
+              <ul class="footer__listtwo footer__list">
+                <li class="footer__itemtwo footer__item">                              
+                  <a class="footer__linktwo footer__link" href="#">Купальники</a>
+                </li>     
+                <li class="footer__itemtwo footer__item">                              
+                  <a class="footer__linktwo footer__link" href="#">Паяльники</a>
+                </li>    
+                <li class="footer__itemtwo footer__item">                              
+                  <a class="footer__linktwo footer__link" href="#">украшения на шею</a>
+                </li>             
+              </ul>
+            </nav>
+            <nav class="footer__navthree footer__nav">
+              <ul class="footer__listthree footer__list">
+                <li class="footer__itemthree footer__item">                              
+                  <a class="footer__linkthree footer__link" href="#">автотовары</a>
+                </li>     
+                <li class="footer__itemthree footer__item">                              
+                  <a class="footer__linkthree footer__link" href="#">головные уборы</a>
+                </li>    
+                <li class="footer__itemthree footer__item">                              
+                  <a class="footer__linkthree footer__link" href="#">летняя распродажа</a>
+                </li>             
+              </ul>
+              <ul class="footer__listthree footer__list">
+                <li class="footer__itemthree footer__item">                              
+                  <a class="footer__linkthree footer__link" href="#">автотовары</a>
+                </li>     
+                <li class="footer__itemthree footer__item">                              
+                  <a class="footer__linkthree footer__link" href="#">головные уборы</a>
+                </li>    
+                <li class="footer__itemthree footer__item">                              
+                  <a class="footer__linkthree footer__link" href="#">летняя распродажа</a>
+                </li>             
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__inner footer__inner-info">
+            <p class="footer__curse-text">Курс на сегодня</p>
+            <div class="footer__curse">
+              <span class="footer__uan">1 ¥</span>  =  <span class="footer__rus">  10.586 Р</span>
+            </div>
+            <div class="footer__line">
+              <div class="footer__box footer__box-one">
+                <p class="footer__timecity"><img src="image/icons/clock1.png" alt=""> 11:00 Москва</p>              
+                <p class="footer__timecity" data-da=".footer__box-two, 460, last"><img src="image/icons/clock2.png" alt="">6:00 Пекин</p>
+              </div>
+              <div class="footer__box footer__box-two">
+                <p class="footer__time " data-da=".footer__box-one, 460, 0">Рабочий день с 4:00 до 13:00</p>
+                <p class="footer__time">Рабочий день с 9:00 до 18:00</p>
+              </div>
+            </div>
+            
+            <a href="tel:88007077568" class="footer__phone">8 (800) 707-75-68</a>
+            <p class="footer__call">Звонок по России бесплатный</p>
+            <div class="footer__socials">
+              <a class="footer__social" href="#">
+                <img  src="image/icons/facebook.png" alt="">
+              </a>
+              <a class="footer__social" href="#">
+                <img  src="image/icons/twiter.png" alt="">
+              </a>
+              <a class="footer__social" href="#">
+                <img  src="image/icons/google.png" alt="">
+              </a>    
+            </div>
+          </div>          
+        </div>
+        <p class="footer__ps">master-tao 2016 © Все права защищены</p>
+        
+      </div>
+    </footer>
   </div>
 
 
