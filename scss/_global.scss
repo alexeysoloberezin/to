@@ -227,7 +227,7 @@ body {
     letter-spacing: 1px;
 
     &:hover {
-      color: #adadad;
+      color: $orange;
     }
   }
 
@@ -267,7 +267,7 @@ body {
     letter-spacing: 1px;
 
     &:hover {
-      color: #adadad;
+      color: $orange;
     }
   }
 
@@ -344,6 +344,11 @@ body {
     color: #fff;
     text-transform: uppercase;
     white-space: nowrap;
+    transition: .25s;
+    display: inline-block;
+    &:hover{
+      color: $green7;
+    }
 
   }
 

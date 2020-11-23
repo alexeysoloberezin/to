@@ -178,7 +178,7 @@ body {
   letter-spacing: 1px;
 }
 .header__link:hover {
-  color: #adadad;
+  color: #ff8e29;
 }
 .header__list-drop {
   display: flex;
@@ -206,7 +206,7 @@ body {
   letter-spacing: 1px;
 }
 .header__link-drop:hover {
-  color: #adadad;
+  color: #ff8e29;
 }
 .header__link-drp {
   cursor: pointer;
@@ -258,6 +258,11 @@ body {
   color: #fff;
   text-transform: uppercase;
   white-space: nowrap;
+  transition: 0.25s;
+  display: inline-block;
+}
+.footer__link:hover {
+  color: #77d444;
 }
 .footer__listthree {
   padding-top: 15px;
@@ -1570,6 +1575,7 @@ body {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   padding-left: 10px;
+  height: 62px;
 }
 .hits__inner {
   display: flex;
