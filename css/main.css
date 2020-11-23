@@ -262,7 +262,7 @@ body {
   display: inline-block;
 }
 .footer__link:hover {
-  color: #77d444;
+  color: #ff8e29;
 }
 .footer__listthree {
   padding-top: 15px;
@@ -1398,6 +1398,10 @@ body {
   justify-content: center;
   height: 50px;
   cursor: pointer;
+  transition: 0.25s;
+}
+.reviews__btn:hover {
+  background: #68a138;
 }
 
 .main__flex {
@@ -1710,7 +1714,11 @@ body {
   background: #77d444;
   color: #fff;
   font-weight: 600;
+  transition: 0.25s;
   cursor: pointer;
+}
+.popup__btn:hover {
+  background: #68a138;
 }
 .popup__close {
   position: absolute;

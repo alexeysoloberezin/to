@@ -989,6 +989,10 @@
     justify-content: center;
     height: 50px;
     cursor: pointer;
+    transition: .25s;
+    &:hover{
+      background: $green-h;
+    }
   }
 }
 
@@ -1347,7 +1351,11 @@
     background: $green7;
     color: #fff;
     font-weight: 600;
+    transition: .25s;
     cursor: pointer;
+    &:hover{
+      background: $green-h;
+    }
 
   }
 
