@@ -144,11 +144,15 @@ body {
 .header__login-inner {
   display: flex;
   align-items: center;
+  flex: 0 0 200px;
 }
 .header__login {
   color: #fff;
   font-size: 16px;
   margin-left: 15px;
+}
+.header__user-inner {
+  position: relative;
 }
 .header__register {
   color: #fff;
@@ -216,9 +220,61 @@ body {
 .header__link-drp:hover {
   color: #ff8e29;
 }
+.header__login-reg {
+  display: none;
+}
+.header__user-inner {
+  cursor: default;
+  padding: 15px 0;
+}
+.header__name {
+  margin-left: 15px;
+  padding-right: 10px;
+  position: relative;
+}
+.header__name:before {
+  content: "";
+  position: absolute;
+  border: 5px solid transparent;
+  border-top: 5px solid #Fff;
+  right: -10px;
+  top: 50%;
+  margin-top: -2px;
+}
 .header__item-drop {
   margin: 12px 0;
   white-space: nowrap;
+}
+.header__account {
+  position: absolute;
+  top: 67px;
+  left: 0;
+  z-index: 400;
+  width: 200px;
+  background: #222635;
+  border-top: 3px solid #ff8e29;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 15px 15px 15px 30px;
+  transform: scaleY(0);
+  opacity: 0;
+  transition: 0.3s ease-in;
+  transform-origin: top;
+}
+.header__account-link {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 14px 0;
+  transition: 0.25s;
+}
+.header__account-link:hover {
+  color: #ff8e29;
+}
+
+.header__user-inner:hover .header__account {
+  transform: scaleY(1);
+  opacity: 1;
 }
 
 .footer {
@@ -353,7 +409,7 @@ body {
   .header__logo img {
     width: 75%;
   }
-  .header__login {
+  .header__login, .header__name {
     margin-left: 0;
   }
   .header__info {
@@ -370,8 +426,21 @@ body {
 @media (max-width: 1005px) {
   .header__login,
 .header__register,
-.header__sl {
+.header__sl,
+.header__name {
     display: none;
+  }
+
+  .header__account {
+    transform: translateX(-78%) scale(0);
+  }
+
+  .header__user-inner:hover .header__account {
+    transform: translateX(-78%) scale(1);
+  }
+
+  .header__login-inner {
+    flex: 0 0 auto;
   }
 }
 @media (max-width: 930px) {
@@ -387,7 +456,7 @@ body {
     margin-top: 30px;
   }
 }
-@media (max-width: 864px) {
+@media (max-width: 964px) {
   .header__logo {
     flex: 0 0 125px;
   }
@@ -552,6 +621,14 @@ body {
 
   .footer__inner-info {
     margin-top: 0px;
+  }
+
+  .header__account {
+    transform: translateX(-61%) scale(0);
+  }
+
+  .header__user-inner:hover .header__account {
+    transform: translateX(-61%) scale(1);
   }
 }
 @media (max-width: 577px) {

@@ -88,9 +88,10 @@ body {
   .burger {
     display: block;
   }
-  
+
 }
-.body__window{
+
+.body__window {
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -100,9 +101,11 @@ body {
   background: rgba(#000, .4);
   transition: 0.7s;
 }
-.body__window-active{
+
+.body__window-active {
   top: 0;
 }
+
 .header {
   background: #13161f;
 
@@ -182,6 +185,7 @@ body {
   &__login-inner {
     display: flex;
     align-items: center;
+    flex: 0 0 200px;
   }
 
   &__user {}
@@ -191,7 +195,9 @@ body {
     font-size: 16px;
     margin-left: 15px;
   }
-
+  &__user-inner{
+    position: relative;
+  }
   &__register {
     color: #fff;
     font-size: 16px;
@@ -202,19 +208,16 @@ body {
     border-top: 2px solid rgba(#fff, 0.15);
     transition: .35s;
     background: #13161f;
-    
   }
 
   &__list {
     display: flex;
     align-items: center;
     height: 55px;
-    
-
   }
 
   &__item {
-    margin: 0 54px 0 0; 
+    margin: 0 54px 0 0;
     position: relative;
   }
 
@@ -241,9 +244,6 @@ body {
     padding: 15px 45px 12px 27px;
     display: none;
     z-index: 4;
-  
-
-
   }
 
   &__item-drp {
@@ -255,8 +255,6 @@ body {
       color: $orange;
     }
   }
-
-  
 
   &__link-drop {
     font-weight: 300;
@@ -280,10 +278,67 @@ body {
       color: $orange;
     }
   }
+  &__login-reg{
+    display: none;
+  }
+  &__user-inner {
+    cursor: default;
+    padding: 15px 0;
+  }
+
+  &__name {
+    margin-left: 15px;
+    padding-right: 10px;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      border: 5px solid transparent;
+      border-top: 5px solid #Fff;
+      right: -10px;
+      top: 50%;
+      margin-top: -2px;
+
+    }
+  }
+
   &__item-drop {
     margin: 12px 0;
     white-space: nowrap;
   }
+
+  &__account {
+    position: absolute;
+    top: 67px;
+    left: 0;
+    z-index: 400;
+    width: 200px;
+    background: #222635;
+    border-top: 3px solid $orange;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 15px 15px 15px 30px;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: .3s ease-in;
+    transform-origin: top;
+  }
+  &__account-link{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 14px 0;
+    transition: .25s;
+    &:hover{
+      color: $orange;
+    }
+  }
+
+}
+.header__user-inner:hover .header__account{
+  transform: scaleY(1);
+  opacity: 1;
 }
 
 //---------------------------- footer
@@ -319,7 +374,7 @@ body {
     margin: 4px 0;
   }
 
-  
+
 
 
   &__navtwo {}
@@ -343,17 +398,20 @@ body {
     white-space: nowrap;
     transition: .25s;
     display: inline-block;
-    &:hover{
+
+    &:hover {
       color: $green7;
     }
 
   }
+
   &__itemone {
     margin-right: 25px;
     transition: .25s;
-    
-    
+
+
   }
+
   &__navthree {}
 
   &__listthree {
@@ -371,9 +429,9 @@ body {
     display: flex;
     justify-content: center;
   }
-  
+
   &__linkone {
-    &:hover{
+    &:hover {
       color: $orange;
     }
   }
@@ -482,7 +540,8 @@ body {
       }
     }
 
-    &__login {
+    &__login,
+    &__name {
       margin-left: 0;
     }
 
@@ -508,25 +567,38 @@ body {
 
   .header__login,
   .header__register,
-  .header__sl {
+  .header__sl,
+  .header__name {
     display: none;
   }
+  .header__account{
+    transform:   translateX(-78%) scale(0);
+  }
+  .header__user-inner:hover .header__account{
+    transform: translateX(-78%) scale(1) ;
+  }
+  .header__login-inner{
+    flex: 0 0 auto;
+  }
+  
 }
 
 @media (max-width:930px) {
   .footer__block {
     flex-direction: column;
   }
-  .footer__inner{
+
+  .footer__inner {
     width: 100%;
-    
+
   }
-  .footer__inner-info{
+
+  .footer__inner-info {
     margin-top: 30px;
   }
 }
 
-@media (max-width:864px) {
+@media (max-width:964px) {
   .header {
     &__logo {
       flex: 0 0 125px;
@@ -688,20 +760,31 @@ body {
     margin: 7px 0;
     white-space: normal;
   }
-  .footer__nav{
+
+  .footer__nav {
     display: none;
   }
-  .footer__inner{
+
+  .footer__inner {
     width: 100%;
   }
-  .footer__burger{
+
+  .footer__burger {
     margin: 0 auto 15px;
   }
-  .footer{
+
+  .footer {
     padding: 20px 0 40px 0;
   }
-  .footer__inner-info{
+
+  .footer__inner-info {
     margin-top: 0px;
+  }
+  .header__account{
+    transform:   translateX(-61%) scale(0);
+  }
+  .header__user-inner:hover .header__account{
+    transform: translateX(-61%) scale(1) ;
   }
 }
 
@@ -732,39 +815,45 @@ body {
       width: 135px;
     }
   }
-  .footer__line{
+
+  .footer__line {
     flex-direction: column;
   }
-  .footer__box{
+
+  .footer__box {
     margin: 5px 0;
   }
-  .footer__ps{
+
+  .footer__ps {
     text-align: center;
   }
-  .footer__timecity{
+
+  .footer__timecity {
     justify-content: center;
   }
-  .footer__phone{
+
+  .footer__phone {
     margin: 10px 0 5px 0;
   }
-  .footer__curse{
+
+  .footer__curse {
     margin: 0 0 5px 0;
   }
 }
 
 
-@media (min-width:767px){
-  .nav-fixed{
-    .header__nav{
+@media (min-width:767px) {
+  .nav-fixed {
+    .header__nav {
       position: fixed;
       top: 0;
       z-index: 777;
       width: 100%;
     }
   }
-  
-  
-  .nav-fixed header{
+
+
+  .nav-fixed header {
     margin-bottom: 50px;
   }
 }
