@@ -164,6 +164,7 @@ body {
   border-top: 2px solid rgba(255, 255, 255, 0.15);
   transition: 0.35s;
   background: #13161f;
+  position: relative;
 }
 .header__list {
   display: flex;
