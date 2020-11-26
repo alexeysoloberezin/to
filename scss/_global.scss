@@ -95,7 +95,8 @@ body {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  top: -100%;
+  top: 0;
+  display: none;
   left: 0;
   z-index: 777;
   background: rgba(#000, .4);
@@ -103,7 +104,7 @@ body {
 }
 
 .body__window-active {
-  top: 0;
+  display: block;
 }
 
 .header {
@@ -195,9 +196,11 @@ body {
     font-size: 16px;
     margin-left: 15px;
   }
-  &__user-inner{
+
+  &__user-inner {
     position: relative;
   }
+
   &__register {
     color: #fff;
     font-size: 16px;
@@ -278,28 +281,41 @@ body {
       color: $orange;
     }
   }
-  &__login-reg{
+
+  &__login-reg {
     display: none;
   }
+
   &__user-inner {
-    cursor: default;
-    padding: 15px 0;
+    cursor: pointer;
+    padding: 5px 0;
   }
 
   &__name {
     margin-left: 15px;
-    padding-right: 10px;
+    margin-right: 10px;
     position: relative;
-
+    display: inline-block;
     &:before {
       content: '';
       position: absolute;
       border: 5px solid transparent;
       border-top: 5px solid #Fff;
-      right: -10px;
+      right: -20px;
       top: 50%;
       margin-top: -2px;
 
+    }
+    &:after{
+      content: '';
+      position: absolute;   
+      bottom: -3px;
+      left: 0;
+      background: $orange;
+      width: 100%;
+      transform: scaleX(0);
+      height: 1px;
+      transition: .25s;
     }
   }
 
@@ -310,7 +326,7 @@ body {
 
   &__account {
     position: absolute;
-    top: 67px;
+    top: 56px;
     left: 0;
     z-index: 400;
     width: 200px;
@@ -320,27 +336,34 @@ body {
     overflow: hidden;
     padding: 15px 15px 15px 30px;
     transform: scaleY(0);
+    visibility: hidden;
     opacity: 0;
     transition: .3s ease-in;
     transform-origin: top;
   }
-  &__account-link{
+
+  &__account-link {
     color: #fff;
     font-size: 16px;
     text-transform: uppercase;
     margin: 14px 0;
     transition: .25s;
-    &:hover{
+
+    &:hover {
       color: $orange;
     }
   }
 
 }
-.header__user-inner:hover .header__account{
+
+.header__account-active {
   transform: scaleY(1);
   opacity: 1;
+  visibility: visible;
 }
-
+.header__user-inner:hover .header__name:after{  
+  transform: scaleX(1);
+}
 //---------------------------- footer
 .footer {
   padding: 30px 0 40px 0;
@@ -571,16 +594,19 @@ body {
   .header__name {
     display: none;
   }
-  .header__account{
-    transform:   translateX(-78%) scale(0);
+
+  .header__account {
+    transform: translateX(-78%) scale(0);
   }
-  .header__user-inner:hover .header__account{
-    transform: translateX(-78%) scale(1) ;
+
+  .header__account-active{
+    transform: translateX(-78%) scale(1);
   }
-  .header__login-inner{
+
+  .header__login-inner {
     flex: 0 0 auto;
   }
-  
+
 }
 
 @media (max-width:930px) {
@@ -780,11 +806,13 @@ body {
   .footer__inner-info {
     margin-top: 0px;
   }
-  .header__account{
-    transform:   translateX(-61%) scale(0);
+
+  .header__account {
+    transform: translateX(-61%) scale(0);
   }
-  .header__user-inner:hover .header__account{
-    transform: translateX(-61%) scale(1) ;
+
+  .header__account-active {
+    transform: translateX(-61%) scale(1);
   }
 }
 

@@ -266,7 +266,11 @@ $(document).ready(function(){
   });
   
   $('.popup__close').click(function(){
-    $('.popup').removeClass('popup-active');  
+    $('.popup').removeClass('popup-active');    
+  });
+
+  $('.header__user-inner').click(function(){
+    $('.header__account').toggleClass('header__account-active');
   });
 });
 
