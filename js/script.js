@@ -272,5 +272,10 @@ $(document).ready(function(){
   $('.header__user-inner').click(function(){
     $('.header__account').toggleClass('header__account-active');
   });
+  $(document.body).on('click', function(e){
+    if(!$(e.target).closest('.header__user-inner').length){
+      $('.header__account').removeClass('header__account-active');
+    }
+  })
 });
 
